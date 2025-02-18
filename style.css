@@ -37,17 +37,15 @@ img {
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100svh;
+  overflow: hidden;
+  line-height: 1;
+  padding: 2rem 1rem;
   font-family: var(--ff-main);
   font-weight: var(--fw-400);
   font-size: var(--fs-body);
-  line-height: 1;
   color: var(--black);
   background-color: #f2f2f2;
-  padding: 2rem 1rem;
-  overflow: hidden;
-  min-height: 100svh;
 }
 
 /* text styles */
@@ -221,6 +219,8 @@ small {
       "column2 column3"
       "column4 column4"
       "column1 column1";
+    place-content: start;
+    max-height: 100%;
   }
 
   .column-one {
